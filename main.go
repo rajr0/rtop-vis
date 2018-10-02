@@ -38,8 +38,8 @@ import (
 
 const (
 	VERSION          = "0.1"
-	DEFAULT_REFRESH  = 5 // default refresh interval in seconds
-	DEFAULT_WEB_ADDR = "0.0.0.0:8080"
+	DEFAULT_REFRESH  = 15 // default refresh interval in seconds
+	DEFAULT_WEB_ADDR = "0.0.0.0:8088"
 	HISTORY_LENGTH   = 10 * 60 / DEFAULT_REFRESH // for 10 minutes
 )
 

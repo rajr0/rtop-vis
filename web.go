@@ -96,8 +96,7 @@ const html = `
 		</div>
 	  </div>
 	  <div class="row footer">
-		<a href="https://github.com/rapidloop/rtop-viz">rtop-viz</a> is MIT-licensed open source software from <a href="https://www.rapidloop.com/">RapidLoop</a>.
-		If you like this, you might like <a href="https://www.opsdash.com">OpsDash</a> - our server and service monitoring product.
+	  	<a href="https://github.com/rapidloop/rtop-viz">my-rtop-viz</a>
 	  </div>
 	</div>
 

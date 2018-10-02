@@ -99,6 +99,10 @@ func tryAgentConnect(user, addr string) (client *ssh.Client) {
 		config := &ssh.ClientConfig{
 			User: user,
 			Auth: []ssh.AuthMethod{auth},
+			HostKeyCallback: func(hostname string, remote net.Addr, key ssh.PublicKey) error {
+				return nil
+			},
+
 		}
 		client, _ = ssh.Dial("tcp", addr, config)
 	}
@@ -120,6 +124,9 @@ func sshConnect(user, addr, keypath string) (client *ssh.Client) {
 	config := &ssh.ClientConfig{
 		User: user,
 		Auth: auths,
+		HostKeyCallback: func(hostname string, remote net.Addr, key ssh.PublicKey) error {
+			return nil
+		},
 	}
 	client, err := ssh.Dial("tcp", addr, config)
 	if err != nil {
